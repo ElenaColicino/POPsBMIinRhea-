@@ -33,16 +33,15 @@ library(devtools)
 
 # Introduction
 
-Outcomes:
+Outcomes:BMI was repeated over time (see "age of the child")
 
 + **Body Mass Index** (*bmi*): continuous outcome, regression analysis
 
-We use the POP chemicals because we have the largest number of observation to use: 280 for each timepoints.
-All the POP values are log10 trasformed:
+We used eight POP chemicals. All POP concentrations were log10 trasformed:
 
 + **POP** (*HCB*,*DDE*,*PCB118*,*PCB153*,*PCB138*,*PCB156*,*PCB180*,*PCB170*)
 
-The covariates used for all the analysis are the following:
+The covariates:
 
 + **gender** (*gender*): 0 = male, 1 = female, male reference group.
 + **maternal age** (*mage*): in years
@@ -51,7 +50,7 @@ The covariates used for all the analysis are the following:
 + **maternal bmi pre-pregancy** (*bmi_pre*) 
 + **colesterol (TO EVALUATE)**
 
-We also use the **age af the child** (*age*) to perform a timepoint analysis for the mixture
+We used the **age of the child** (*age*) to identify outcome trajectories
 
 ```{r dataset_cleaning, echo=FALSE}
 # load dataset
